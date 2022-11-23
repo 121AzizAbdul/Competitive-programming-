@@ -1,0 +1,104 @@
+{
+	"cp-extension": {
+	  "prefix": ["cp"],
+	  "body": ["#include <bits/stdc++.h>",
+"using namespace std;",
+"#define ll long long int",
+"#define nl '\\n'",
+"#define all(x) (x).begin(),(x).end()",
+"#define pb push_back",
+"#define ff first ", 
+"#define ss second ",
+"const ll sz=2e5+7,Inf=1e9+7;",
+"void solve(){",
+	"\t$2",
+"}",
+"int main() {\n\tios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);\n",
+"\tll test=1;\n$1\tcin>>test;\n\twhile(test--)\n\t{\n\t\tsolve();\n\t}\n\treturn 0;\n}\n"
+	  
+	  ],
+	  "description": "Default cpp code for CP"
+	},
+	"for A vector":{
+		"prefix":["vc"],
+		"body": [
+			"vector<${1:int}>${2:v};",
+	          ],
+		"description": "used for intialize a vector"
+   },
+   "for A Map":{
+	"prefix":["mp"],
+	"body": [
+		"map<${1:int},${2:int}>${3:mp};",
+		  ],
+	"description": "used for intialize a map"
+},
+"for A set":{
+	"prefix":["st"],
+	"body": [
+		"set<${1:int}>${2:s};",
+		  ],
+	"description": "used for intialize a set"
+},
+"for A loop":{
+	"prefix":["fr"],
+	"body": [
+		"for(int ${1:i}){\n}",
+		  ],
+	"description": "used for intialize a loop"
+},
+"for in":{
+	"prefix":["ci"],
+	"body": [
+		"cin>>",
+		  ],
+	"description": "used for input"
+},
+"for out":{
+	"prefix":["co"],
+	"body": [
+		"cout<<",
+		  ],
+	"description": "used for output"
+},
+"for priority queue":{
+	"prefix":["pq"],
+	"body": [
+		"priority_queue<${1:int}>${2:pq}",
+		  ],
+	"description": "used for priority queue"
+},
+"for seive":{
+	"prefix":["seive"],
+	"body": [
+		"vector<ll>v;",
+		"void seive(){",
+		  "bool a[sz]={0};",
+		 " for(ll i=2;i<500000;i++){",
+			"if(a[i]==0){",
+			 " for(ll j=i+i;j<500000;j+=i){",
+			" a[j]=1;}",
+			"}\n}",
+		  "for(int i=2;i<500000;i++)",
+		 " if(a[i]==0) v.pb(i);\n}",
+		  ],
+	"description": "used for seive of eratosness"
+},
+"for Binary exponention":{
+	"prefix":["binaryExp"],
+	"body": [
+		"ll binaryExponentiation(ll base,ll pow){",
+		"ll ans=1;",
+		"while (pow){",
+		"if(pow&1) ans*=base;//ans=ans*base%m;",
+		" base*=base;//base=base*base%m;\npow/=2;\n}",
+		" return ans;\n}",
+		  ],
+	"description": "used for binary exponentiation"
+}
+
+
+
+}
+
+
